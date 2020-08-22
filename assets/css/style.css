@@ -94,3 +94,11 @@ footer{
     color: white;
     font-weight: bold;
 }
+
+.card{
+    display: inline-block;
+    width: 30%;
+    background: white;
+    color:  #1e1e1e;
+    margin: 10px 0px;
+}

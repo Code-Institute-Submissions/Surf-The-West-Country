@@ -1,7 +1,7 @@
 body{
     font-family: 'Poppins', sans-serif;
-    background: rgb(52,58,64);
     margin: 0px;
+    background: rgb(52,58,64);
 }
 
 header{
@@ -20,7 +20,47 @@ main>h2{
 
 /*-------FOOTER-------*/
 
-.row-footer{
-    
+footer{
+    background: #1e1e1e;
 }
 
+.row-footer{
+    text-align: center;
+    margin-top: 12px;
+    padding: 10px 0px;
+}
+
+.col-footer{
+    display: inline-block;
+    color: white;
+    width: 33%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.col-footer>ul{
+    list-style-type: none;
+}
+
+.social-links{
+    display: inline-block;
+    text-align: center;
+    font-size: 22px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.copyright{
+    font-size: 10px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+    padding: 2px, 5px;
+    color: white;
+}
+
+.copyright > a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}

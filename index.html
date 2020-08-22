@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet">
     <script type="text/javascript" src="assets/js/jquery-3.5.1.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
 <body>
@@ -30,11 +31,15 @@
             </div>
             <div class="col-2">
                 <div class="main-boxes">
-                    <button id="north-button"><a href="north.html">North Coast</a></button>
-                    <button id="west-button"><a href="west.html">West Coast</a></button>
-                    <button id="south-button"><a href="south.html">South Coast</a></button>
+                    <button class="main-button" id="north-button">
+                        <a href="north.html">North Coast</a>
+                    </button>
+                    <button class="main-button" id="west-button"><a href="west.html">West Coast</a></button>
+                    <button class="main-button" id="south-button"><a href="south.html">South Coast</a></button>
                 </div>
             </div>
+            <div id="map" class="map"></div>
+            
         </div>
     
     </main>
@@ -67,7 +72,6 @@
         </div>
         <p class="copyright">Copyright &copy 2020 by <a href="https://inesnago.github.io/my-cv-final/" target="_blank">ims_dev</a></p>
     </footer>
-    
     <script type="text/javascript" src="assets/js/myscripts.js"></script>
 </body>
 </html>

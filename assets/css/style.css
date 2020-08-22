@@ -1,3 +1,26 @@
 body{
     font-family: 'Poppins', sans-serif;
+    background: rgb(52,58,64);
+    margin: 0px;
 }
+
+header{
+    background: white;
+    padding: 8px;
+}
+
+main{
+    text-align: center;
+    color: white;
+}
+
+main>h2{
+    font-size: 26px;
+}
+
+/*-------FOOTER-------*/
+
+.row-footer{
+    
+}
+

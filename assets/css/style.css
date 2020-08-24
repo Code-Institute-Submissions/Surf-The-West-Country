@@ -44,8 +44,8 @@ a {
 }
 
 .map {
-    height: 400px;
-    width: 100%;
+    width: 40%;
+    background-color: white;
 }
 
 /*-------FOOTER-------*/
@@ -96,7 +96,7 @@ footer{
 }
 
 .card{
-    display: inline-block;
+    display: block;
     width: 30%;
     background: white;
     color:  #1e1e1e;

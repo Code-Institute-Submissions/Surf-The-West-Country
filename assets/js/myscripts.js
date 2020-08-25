@@ -1,3 +1,4 @@
+
 $('.main-button').mouseenter(function(){
     $(this).addClass('shade');
 });
@@ -7,47 +8,25 @@ $('.main-button').mouseleave(function(){
 });
 
 $('#north-button').click(function(){
-    $("#north-main").slideToggle("slow");
-    
-    if($("#west-button") || $("#south-button") == 'open'){
-        $("north-main").hide();
-    }
+    $("#north-main").children().addClass("inline-block").slideToggle("slow");
+    $("#west-main").children().hide("slow");
+    $("#south-main").children().hide("slow");
 });
 
 $('#west-button').click(function(){
-    $("#west-main").slideToggle("slow");
+    $("#west-main").children().addClass("inline-block").slideToggle("slow");
+    $("#north-main").children().hide("slow");
+    $("#south-main").children().hide("slow");
+});
+
+$('#south-button').click(function(){
+    $("#south-main").children().addClass("inline-block").slideToggle("slow");
+    $("#west-main").children().hide("slow");
+    $("#north-main").children().hide("slow");
 });
 
 
-/*function toggleMainNorth(){
-
-    var toggle = document.getElementById("north-main");
-    if (toggle.style.display === "none"){
-        toggle.style.display = "inline-block";
-    } else{
-        toggle.style.display = "none";
-    }
-   
-}
-
-function toggleMainWest(){
     
-    var toggle = document.getElementById("west-main");
-        
-    if (toggle.style.display === "none"){
-        toggle.style.display = "inline-block";
-    } else{
-        toggle.style.display = "none";
-    }
-}
 
-function toggleMainSouth(){
-    
-    var toggle = document.getElementById("south-main");
-        
-    if (toggle.style.display === "none"){
-        toggle.style.display = "inline-block";
-    } else{
-        toggle.style.display = "none";
-    }
-}*/
+
+

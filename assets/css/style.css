@@ -52,7 +52,7 @@ footer{
 
 .row-footer{
     text-align: center;
-    margin-top: 12px;
+    margin: 12px 0px;
     padding: 10px 0px;
 }
 
@@ -80,8 +80,8 @@ footer{
     font-size: 10px;
     text-align: center;
     letter-spacing: 2px;
-    margin-bottom: 0px;
-    padding: 2px, 5px;
+    margin-bottom: 10px;
+    padding: 10px, 5px;
     color: white;
 }
 
@@ -97,6 +97,7 @@ footer{
     margin: 10px 0px;
 }
 
+
 .col{
     width: 45%;
     margin: 0px;
@@ -105,8 +106,13 @@ footer{
     display: none;
 }
 
+.inline-block{
+    display: inline-block;
+}
+
 .map{
     width: 100px;
     height: 100px;
     background-color: blue;
+    display: inline-block;
 }

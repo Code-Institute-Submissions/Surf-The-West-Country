@@ -43,10 +43,6 @@ a {
     border-radius: 10px;
 }
 
-.map {
-    width: 40%;
-    background-color: white;
-}
 
 /*-------FOOTER-------*/
 
@@ -96,9 +92,20 @@ footer{
 }
 
 .card{
-    display: block;
-    width: 30%;
     background: white;
     color:  #1e1e1e;
     margin: 10px 0px;
+}
+
+.col{
+    width: 45%;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.map{
+    width: inherit;
+    height: inherit;
+    background-color: blue;
 }

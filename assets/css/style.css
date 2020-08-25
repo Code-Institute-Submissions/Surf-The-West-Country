@@ -102,10 +102,11 @@ footer{
     margin: 0px;
     padding: 0px;
     text-align: center;
+    display: none;
 }
 
 .map{
-    width: inherit;
-    height: inherit;
+    width: 100px;
+    height: 100px;
     background-color: blue;
 }

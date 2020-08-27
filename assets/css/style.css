@@ -114,3 +114,14 @@ footer{
     background-color: blue;
     display: inline-block;
 }
+
+.modalSub{
+    background-color: red;
+    display: none;
+    z-index: 1;
+    overflow: auto;
+}
+
+.col-subs{
+    background-color: violet;
+}

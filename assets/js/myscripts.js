@@ -8,22 +8,37 @@ $('.main-button').mouseleave(function(){
 });
 
 $('#north-button').click(function(){
-    $("#north-main").children().addClass("inline-block").slideToggle("slow");
-    $("#west-main").children().hide("slow");
-    $("#south-main").children().hide("slow");
+    $(".north-main").slideToggle();
+    $(".west-main").hide("slow");
+    $(".south-main").hide("slow");
 });
 
 $('#west-button').click(function(){
-    $("#west-main").children().addClass("inline-block").slideToggle("slow");
-    $("#north-main").children().hide("slow");
-    $("#south-main").children().hide("slow");
+    $(".west-main").slideToggle();
+    $(".north-main").hide("slow");
+    $(".south-main").hide("slow");
 });
 
 $('#south-button').click(function(){
-    $("#south-main").children().addClass("inline-block").slideToggle("slow");
-    $("#west-main").children().hide("slow");
-    $("#north-main").children().hide("slow");
+    $(".south-main").slideToggle();
+    $(".west-main").hide("slow");
+    $(".north-main").hide("slow");
 });
+
+/*function toggleNorth (){
+
+    var toggleNorth = document.getElementById("north-main");
+    var closeWest = document.getElementById("west-main");
+    var closeSouth = document.getElementById("south-main");
+
+    if (toggleNorth.style.display == "none"){
+        $("#north-button").click(function(){
+            $("#north-main").slideToggle("slow");
+        })
+    } else{
+        toggleNorth.style.display = "none"
+    }
+}*/
 
 
     

@@ -40,9 +40,32 @@ $('#south-button').click(function(){
     }
 }*/
 
-function modalSubPopUp (){
-    var modalSubscribe = document.getElementById("modalSub");
+document.getElementById("open-modal").addEventListener("click", openModalSub)
+
+function openModalSub(){
+    
+    var modal = document.getElementById("modalSub");
+
+    if(modal.style.display == "none"){
+        modal.style.display = "block"
+    }else{
+        modal.style.display = "none";
+    }
 }
+
+
+//$('#open-modal').click(function(){
+    //$("#modalSub").show();
+//});
+
+
+    
+
+    
+
+
+  
+
 
 
     

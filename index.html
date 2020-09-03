@@ -186,19 +186,24 @@
 
         <div id= "modalSub">
             <div id="modalContent">
-                <form action="#">
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstName">
-
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastName">
-
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
-
-                    <input type="button" value="submit">
+                <div class="modal-head">
+                    <p>Please fill the form below to join our weekly mailing list on the latests news and surf reports.</p>
                     <span onclick="closeModalSub()" id="close-button"><i class="fas fa-times"></i></span>
+                </div>
+
+                <form class="modal-form" action="#">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstName">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastName">
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email">
+
+                <input type="button" class="sm-main-button" value="submit">
                 </form>
+
             </div>
         </div>
     </section>

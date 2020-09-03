@@ -137,6 +137,35 @@ footer{
     background-color: #1e1e1e;
     width: 80%;
     text-align: center;
+    display: inline-block;
+}
+
+.modal-head{
+    background-color: #263238;
+    margin-top: 0px;
+    padding: 4px;
+}
+
+.modal-head>p{
+    margin-top: 2px;
+    color: white;
+    display: inline-block;
+}
+
+.modal-form>label{
+    display: block;
+    color: white;
+    margin: 4px 0px;
+}
+
+.modal-form>input{
+    width: 60%;
+    padding: 6px;
+    margin-bottom: 4px;
+}
+
+#close-button{
+    display: inline-block;
 }
 
 .col-subs{

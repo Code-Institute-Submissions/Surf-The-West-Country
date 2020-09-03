@@ -178,24 +178,27 @@
     <section>
 
         <div class="row">
-            <div class="col-subs">
-                <p>Want to receive weekly updates and surf reports? Join the crew below</p>
-                <button onclick="openModalSub()" id="open-modal">Subscribe</button>
+            <div onclick="openModalSub()" class="col-subs">
+                <p>Want to receive weekly updates and surf reports? Subscribe below for more!</p>
+                <button  class="sm-main-button" id="open-modal">Subscribe</button>
             </div>
         </div>
 
         <div id= "modalSub">
             <div id="modalContent">
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstName">
+                <form action="#">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstName">
 
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastName">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastName">
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
 
-                <input type="button" value="submit">
+                    <input type="button" value="submit">
+                    <span onclick="closeModalSub()" id="close-button"><i class="fas fa-times"></i></span>
+                </form>
             </div>
         </div>
     </section>

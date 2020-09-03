@@ -1,7 +1,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0px;
-    background: rgb(52,58,64);
+    background: #263238;
 }
 
 header{
@@ -21,6 +21,7 @@ main>h2{
 .main-button{
     margin: 4px 20px;
     padding: 10px;
+    letter-spacing: 2px;
     font-size: 15px;
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
@@ -116,7 +117,7 @@ footer{
 }
 
 #modalSub{
-    background-color: red;
+    background-color:rgb(52,58,64, 0.5);
     display: none;
     z-index: 1;
     overflow: auto;
@@ -129,15 +130,50 @@ footer{
 }
 
 .display{
-    display: block;
+    display: none;
 }
 
 #modalContent{
-    background-color: green;
+    background-color: #1e1e1e;
     width: 80%;
-    position: relative;
+    text-align: center;
 }
 
 .col-subs{
-    background-color: violet;
+    background-color: #1e1e1e;
+    text-align: center;
+    color: white;
+    padding-bottom: 8px;
 }
+
+.col-subs>p{
+    margin-bottom: 4px;
+    padding-top: 8px;
+}
+
+.sm-main-button{
+    margin: 2px 14px;
+    padding: 6px 20px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 12px;
+    color: white;
+    outline: none;
+}
+
+.shade-white {
+    background-color:rgba(255, 152, 0, 0.7);
+    color: #1e1e1e;
+}
+
+.shade {
+    background-color: #1e1e1e;
+    border: 2px solid #1e1e1e;
+    border-radius: 10px;
+}
+
+/*rgb(255, 235, 59, 0.3)*/

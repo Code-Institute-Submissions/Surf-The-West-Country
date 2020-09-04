@@ -135,9 +135,9 @@ footer{
 
 #modalContent{
     background-color: #1e1e1e;
-    width: 80%;
+    width: 100%;
     text-align: center;
-    display: inline-block;
+    margin: 0px 26px;
 }
 
 .modal-head{
@@ -205,4 +205,23 @@ footer{
     border-radius: 10px;
 }
 
-/*rgb(255, 235, 59, 0.3)*/
+.shade-dark-blue{
+    background-color: #263238;
+    border: 2px solid #1e1e1e;
+    border-radius: 10px;
+}
+
+.modal-button{
+    margin: 2px 8px;
+    width: 30%;
+    padding: 6px 10px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 12px;
+    color: white;
+    outline: none;
+}

@@ -35,13 +35,23 @@ $(".col-subs").mouseleave(function (){
     $(".sm-main-button").removeClass("shade");
 })
 
+$('.sm-main-button').mouseenter(function(){
+    $(this).addClass('shade-dark-blue');
+});
+
+$('.sm-main-button').mouseleave(function(){
+    $(this).removeClass('shade-dark-blue');
+});
+
 
 document.getElementById("open-modal").addEventListener("click", openModalSub)
 
 function openModalSub(){
 
     var modal = document.getElementById("modalSub");
+    /*var modalC = document.getElementById("modalContent");*/
     modal.style.display = "block"
+    /*modalC.style.display = "inline-block"*/
 }
 
 document.getElementById("close-button").addEventListener("click", closeModalSub)
@@ -52,11 +62,4 @@ function closeModalSub(){
     modalClose.style.display = "none"
 }
     
-
-
-
-
-    
-
-
 

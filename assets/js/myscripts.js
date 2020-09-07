@@ -44,10 +44,10 @@ $('.modal-button').mouseleave(function(){
 });
 
 
+
 document.getElementById("open-modal").addEventListener("click", openModalSub)
 
 function openModalSub(){
-
     var modal = document.getElementById("modalSub");
     modal.style.display = "block"
 }
@@ -60,4 +60,10 @@ function closeModalSub(){
     modalClose.style.display = "none"
 }
     
+$(".footer-link, .social-links").mouseenter(function(){
+    $(this).addClass('hover-dark');
+})
 
+$(".footer-link, .social-links").mouseleave(function(){
+    $(this).removeClass('hover-dark');
+})

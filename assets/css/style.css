@@ -1,7 +1,8 @@
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0px;
-    background: #263238;
+    background:#263238; 
+    
 }
 
 header{
@@ -138,22 +139,24 @@ footer{
 
 #modalContent{
     background-color:#3E4551;
-    width: 50%;
+    width: 60%;
     text-align: center;
     margin: 0px;
     padding-bottom: 8px;
     position: relative;
     left: 25%;
+    letter-spacing: 2px;
 }
 
 .modal-head{
     background-color: #1e1e1e;
     margin-top: 0px;
-    padding: 4px;
+    padding: 8px;
 }
 
 .modal-head>p{
     margin-top: 2px;
+    margin-bottom: 2px;
     color: white;
     width: 90%;
     display: inline-block;
@@ -166,7 +169,7 @@ footer{
 
 .modal-button{
     font-size: 12px;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
     background: transparent;
@@ -184,7 +187,7 @@ footer{
 }
 
 .modal-form>input{
-    width: 50%;
+    width: 70%;
     padding: 6px;
     margin-bottom: 4px;
 }
@@ -192,7 +195,7 @@ footer{
 #close-button{
     display: inline-block;
     color: white;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .col-subs{

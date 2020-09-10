@@ -137,11 +137,13 @@ footer{
 }
 
 #modalContent{
-    background-color: #263238;
-    width: 100%;
+    background-color:#3E4551;
+    width: 50%;
     text-align: center;
     margin: 0px;
     padding-bottom: 8px;
+    position: relative;
+    left: 25%;
 }
 
 .modal-head{
@@ -238,4 +240,8 @@ footer{
 
 .hover-dark{
     color: #263238;
+}
+
+.margin{
+    margin-top: 32px;
 }

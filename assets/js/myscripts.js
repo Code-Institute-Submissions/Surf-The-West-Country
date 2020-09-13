@@ -67,3 +67,13 @@ $(".footer-link, .social-links").mouseenter(function(){
 $(".footer-link, .social-links").mouseleave(function(){
     $(this).removeClass('hover-dark');
 })
+
+function initMap(){
+    var map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 3,
+        center: {
+            lat: 50.2660,
+            lng: 5.0527
+        }
+    });
+}

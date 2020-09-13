@@ -41,12 +41,12 @@
             </div>
         </div>
 <!--FEATURES OF TOPIC # 1 == MAP + CARDS -->
-        <div class="row">
+        <div class="row"> <!-------NORTH-------->
 
             <div class="col north-main">
 
                 <div class="col north-main">
-                    <div class= "map"></div>
+                    <div id= "map"></div>
                 </div>
 
                 <div class="card">
@@ -86,7 +86,7 @@
 
         </div>
 
-        <div class="row">
+        <div class="row"> <!------WEST------>
 
             <div class="col west-main">
 
@@ -131,7 +131,7 @@
 
         </div>
 
-        <div class="row">
+        <div class="row"><!------SOUTH------->
 
             <div class="col south-main">
 
@@ -184,9 +184,9 @@
             </div>
             <div class="col-2">
                 <div class="main-boxes">
-                    <button class="main-button" id="north-button">North Coast</button>
-                    <button class="main-button" id="west-button">West Coast</button>
-                    <button class="main-button" id="south-button">South Coast</button>
+                    <button class="main-button">North Coast</button>
+                    <button class="main-button">West Coast</button>
+                    <button class="main-button">South Coast</button>
                 </div>
             </div>
         </div>
@@ -257,6 +257,21 @@
         <p class="copyright">Copyright &copy 2020 by <a href="https://inesnago.github.io/my-cv-final/" target="_blank">ims_dev</a></p>
     </footer>
 
+
+<!--------------------SCRIPTS-------------------------->
+
+    <!--<script>
+        function initMap(){
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 3,
+                center: {
+                    lat: 50.2660,
+                    lng: 5.0527
+                }
+            });
+        }
+    </script>-->
+
     <!--JS FILES-->
     <script type="text/javascript" src="assets/js/myscripts.js"></script>
 
@@ -264,5 +279,6 @@
     <script src="https://unpkg.com/@google/markerclustererplus@5.1.0/dist/markerclustererplus.min.js"></script>
         
     <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBe8UK689XkHHCkHCMqLsLeV0ubBNU-AaI&callback=initMap"></script>
+
 </body>
 </html>

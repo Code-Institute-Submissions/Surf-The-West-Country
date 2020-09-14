@@ -85,10 +85,15 @@ function initMap() {
         map
     });
 
-    fistral.addListener("click", function(){
-        $(".fistralB").animate();
-    })
+    var infowindow = new google.maps.InfoWindow({
+        content: "<p><b>A.Fistral Beach</b></p>"
+    });
 
+    fistral.addListener("click", () =>{
+        infowindow.open(map, fistral);
+    });
+     
+    
     var lusty = new google.maps.Marker({
         position: {lat: 50.4218, lng: -5.0642},
         zoom: 12,

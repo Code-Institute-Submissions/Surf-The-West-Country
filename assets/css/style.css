@@ -123,6 +123,9 @@ footer{
 div#map {
     min-height: 360px;
     margin-top: 6px;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 #modalSub{
@@ -254,3 +257,10 @@ div#map {
     margin-top: 32px;
 }
 
+.card-hover{
+    background: #3E4551;
+    color:  white;
+    margin: 10px 0px;
+    width: 30%;
+    display: inline-block;
+}

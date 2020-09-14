@@ -113,16 +113,10 @@ footer{
 }
 
 
-/*.map{
-    width: 100px;
-    height: 100px;
-    background-color: blue;
-    display: inline-block;
-}*/
-
-div#map {
+.map {
     min-height: 360px;
-    margin-top: 6px;
+    margin: 10px;
+    border: 2px solid white;
     color: black;
     text-transform: uppercase;
     text-align: center;

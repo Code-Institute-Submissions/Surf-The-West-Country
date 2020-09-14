@@ -68,10 +68,11 @@ $(".footer-link, .social-links").mouseleave(function(){
     $(this).removeClass('hover-dark');
 })
 
-let map; 
+/*-------------- NORTH MAIN BUTTON CONTENT ----------------*/
+ 
 
 function initMap() {
-    map = new google.maps.Map(document.getElementById("map"), {
+    let mapOne = new google.maps.Map(document.getElementById("map-north"), {
         zoom: 8,
         center: {
             lat: 50.503632,
@@ -79,10 +80,12 @@ function initMap() {
         }
     });
 
+    /*------ FISTRAL BEACH -------*/
+
     var fistral = new google.maps.Marker({
         position: {lat: 50.4165, lng: -5.1002},
         zoom: 12,
-        map
+        mapOne
     });
 
     var infowindow = new google.maps.InfoWindow({
@@ -90,21 +93,84 @@ function initMap() {
     });
 
     fistral.addListener("click", () =>{
-        infowindow.open(map, fistral);
+        infowindow.open(mapOne, fistral);
     });
      
-    
+    /*------ LUSTY BEACH -------*/
+
     var lusty = new google.maps.Marker({
         position: {lat: 50.4218, lng: -5.0642},
         zoom: 12,
-        map
+        mapOne
     });
+
+    var infowindow2 = new google.maps.InfoWindow({
+        content: "<p><b>B.Lusty Glaze</b></p>"
+    });
+
+    lusty.addListener("click", () =>{
+        infowindow2.open(mapOne, lusty);
+    });
+
+    /*------ PERRAN BEACH -------*/
 
     var perran = new google.maps.Marker({
         position: {lat: 50.3444, lng: -5.1544},
         zoom: 12,
+        mapOne
+    });
+
+    var infowindow3 = new google.maps.InfoWindow({
+        content: "<p><b>C.Perranporth Beach</b></p>"
+    });
+
+    perran.addListener("click", () =>{
+        infowindow3.open(mapOne, perran);
+    });
+
+    /*------ WIDEMOUTH BEACH -------*/
+
+    var widemouth = new google.maps.Marker({
+        position: {lat: 50.7899, lng: -4.5545},
+        zoom: 12,
         map
     });
 
+    var infowindow4 = new google.maps.InfoWindow({
+        content: "<p><b>D.Widemouth Beach</b></p>"
+    });
+
+    widemouth.addListener("click", () =>{
+        infowindow4.open(map, widemouth);
+    });
 }
 
+
+
+
+function initMap() {
+    let mapTwo = new google.maps.Map(document.getElementById("map-west"), {
+        zoom: 8,
+        center: {
+            lat: 50.503632,
+            lng: -4.652498
+        }
+    });
+
+    /*------ SENNEN BEACH -------*/
+
+    var sennen = new google.maps.Marker({
+        position: {lat: 50.0720, lng: -5.6947},
+        zoom: 12,
+        mapTwo
+    });
+
+    var infowindow5 = new google.maps.InfoWindow({
+        content: "<p><b>A.Sennen Cove</b></p>"
+    });
+
+    sennen.addListener("click", () =>{
+        infowindow5.open(mapTwo, sennen);
+    });
+     
+}

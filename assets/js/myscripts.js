@@ -68,12 +68,38 @@ $(".footer-link, .social-links").mouseleave(function(){
     $(this).removeClass('hover-dark');
 })
 
-function initMap(){
-    var map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 3,
+let map; 
+
+function initMap() {
+    map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 8,
         center: {
-            lat: 50.2660,
-            lng: 5.0527
+            lat: 50.503632,
+            lng: -4.652498
         }
     });
+
+    var fistral = new google.maps.Marker({
+        position: {lat: 50.4165, lng: -5.1002},
+        zoom: 12,
+        map
+    });
+
+    fistral.addListener("click", function(){
+        $(".fistralB").animate();
+    })
+
+    var lusty = new google.maps.Marker({
+        position: {lat: 50.4218, lng: -5.0642},
+        zoom: 12,
+        map
+    });
+
+    var perran = new google.maps.Marker({
+        position: {lat: 50.3444, lng: -5.1544},
+        zoom: 12,
+        map
+    });
+
 }
+

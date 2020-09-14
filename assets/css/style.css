@@ -113,11 +113,16 @@ footer{
 }
 
 
-.map{
+/*.map{
     width: 100px;
     height: 100px;
     background-color: blue;
     display: inline-block;
+}*/
+
+div#map {
+    min-height: 360px;
+    margin-top: 6px;
 }
 
 #modalSub{

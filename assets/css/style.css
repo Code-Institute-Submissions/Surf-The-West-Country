@@ -258,3 +258,11 @@ footer{
     width: 30%;
     display: inline-block;
 }
+
+.addSurfSpot{
+    height: 36px;
+}
+
+.addSurfSpot>button{
+    float: right;
+}

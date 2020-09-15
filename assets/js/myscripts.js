@@ -70,7 +70,7 @@ $(".footer-link, .social-links").mouseleave(function(){
 
 /*-------------- NORTH MAIN BUTTON CONTENT ----------------*/
 
-let mapOne, mapTwo;
+let map;
 
 function initMap() {
 
@@ -82,7 +82,10 @@ function initMap() {
         }
     });
 
-/*------ FISTRAL BEACH -------*/
+    /*------ FISTRAL BEACH -------*/
+    var infowindow = new google.maps.InfoWindow({
+        content: "<p><b>A.Fistral Beach</b></p>"
+    });
 
     var fistral = new google.maps.Marker({
         position: {lat: 50.4165, lng: -5.1002},
@@ -90,14 +93,9 @@ function initMap() {
         map
     });
 
-    var infowindow = new google.maps.InfoWindow({
-        content: "<p><b>A.Fistral Beach</b></p>"
-    });
-
     fistral.addListener("click", () =>{
         infowindow.open(map, fistral);
     });
-    
      
     /*------ LUSTY BEACH -------*/
 

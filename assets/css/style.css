@@ -8,6 +8,7 @@ body{
 header{
     background: white;
     padding: 8px;
+    font-family: 'Poppins', sans-serif;
 }
 
 main{
@@ -116,7 +117,6 @@ footer{
 .map {
     min-height: 360px;
     margin: 10px;
-    border: 2px solid white;
     color: black;
     text-transform: uppercase;
     text-align: center;
@@ -141,7 +141,7 @@ footer{
 
 #modalContent{
     background-color:#3E4551;
-    width: 60%;
+    width: 50%;
     text-align: center;
     margin: 0px;
     padding-bottom: 8px;
@@ -189,7 +189,7 @@ footer{
 }
 
 .modal-form>input{
-    width: 70%;
+    width: 50%;
     padding: 6px;
     margin-bottom: 4px;
 }
@@ -265,4 +265,5 @@ footer{
 
 .addSurfSpot>button{
     float: right;
+    font-family: 'Poppins', sans-serif;
 }

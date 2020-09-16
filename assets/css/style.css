@@ -277,7 +277,12 @@ footer{
     font-family: 'Poppins', sans-serif;
 }
 
+.add-row{
+    background: #263238;
+    width: 50%;
+}
 
 .addPopUp{
     display: none;
+    color: white;
 }

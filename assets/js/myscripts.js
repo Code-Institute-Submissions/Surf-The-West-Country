@@ -44,7 +44,6 @@ $('.modal-button').mouseleave(function(){
 });
 
 
-
 document.getElementById("open-modal").addEventListener("click", openModalSub)
 
 function openModalSub(){
@@ -163,3 +162,6 @@ function initMap() {
      
 }
 
+$("#addSurfSpotButton").click(function(){
+    $(".addPopUp").slideToggle("slow");
+})

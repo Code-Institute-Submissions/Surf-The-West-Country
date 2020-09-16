@@ -272,7 +272,12 @@ footer{
     height: 36px;
 }
 
-.addSurfSpot>button{
+#addSurfSpotButton{
     float: right;
     font-family: 'Poppins', sans-serif;
+}
+
+.addPopUp{
+    float:right;
+    display: none;
 }

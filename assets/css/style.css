@@ -277,23 +277,43 @@ footer{
     font-family: 'Poppins', sans-serif;
 }
 
-.addPopUp{
+.add-row{
     display: none;
+}
+
+.addPopUp{
     color: white;
-    background-color: #1e1e1e;
+    background-color:rgb(30,30,30);
     padding: 8px;
-    font-size: 12px;
+    font-size: 14px;
+    width: 100%;
+    display: inline-block;
+}
+
+.addPopUp>form{
+    width: 65%;
+    display: inline-block;
 }
 
 .addPopUp>p{
     margin-top: 0px;
     text-transform: uppercase;
     letter-spacing: 2px;
+}
 
+
+.addSurfSpotImage{
+    display: inline-block;
+    text-align: center;
+    opacity: 0.6;
+    width: 25%;
+}
+
+.addSurfSpotImage>img{
+    text-align: center;
 }
 
 .inputSize{
-    width: 50%;
+    width: 80%;
     display: block;
 }
-

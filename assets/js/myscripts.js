@@ -163,7 +163,7 @@ function initMap() {
 }
 
 $("#addSurfSpotButton").click(function(){
-    $(".addPopUp").slideToggle("slow");
+    $(".add-row").slideToggle("slow");
 })
 
 

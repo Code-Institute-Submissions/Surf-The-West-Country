@@ -277,12 +277,21 @@ footer{
     font-family: 'Poppins', sans-serif;
 }
 
-.add-row{
-    background: #263238;
-    width: 50%;
-}
-
 .addPopUp{
     display: none;
     color: white;
+    background-color: #1e1e1e;
+    padding: 8px;
+}
+
+.addPopUp>p{
+    margin-top: 0px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+.inputSize{
+    width: 50%;
+    display: block;
 }

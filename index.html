@@ -23,49 +23,55 @@
             <div class="addSurfSpot">
                 <button id ="addSurfSpotButton" class="sm-main-button"><i class="fas fa-plus-circle"></i> Add surfspots</button>
             </div>
-            <div class="add-row">
-                <div class= "addPopUp">
-                    <p>Tell us more about your local surfspot below.</p>
-                    <form>
-
-                        <label for="spotName">Spot Name</label>
-                        <input id="spotName" name="spotName" type="text">
-
-                        <label for="spotLocation">Spot Location</label>
-                        <input id="spotLocation" name="spotLocation" type="text">
-
-                        <p>Tick features below if applicable:</p>
-
-                        <input id="parking" value="yes" name="parking" type="checkbox">
-                        <label for="parking">Parking Available</label>
-
-                        <input id="lifeguard" value="yes" type="checkbox">
-                        <label for="lifeguard">Lifeguard Services</label>
-
-                        <input id="surfschools" value="yes" type="checkbox">
-                        <label for="surfschools">Surf Schools</label>
-
-                        <input id="disabled" value="yes" type="checkbox">
-                        <label for="disabled">Disabled Access/Blue Flag</label>
-
-                        <label for="break">Break Type</label>
-                        <input type="text" name="break" id="break">
-
-                        <label for="crowd">Crowd Levels</label>
-                        <input type="range" id="for" name="crowdLevel" min="0" max="10">
-                        
-                        <p>Are you happy for us to make your surf spot public on Surf The West Contry website?</p>
-                        <label for="publcY">Yes</label>
-                        <input type="radio" name="public" id="publicY" required>
-                        <label for="publicN">No</label>
-                        <input type="radio" name="public" id="publicN">
-                          
-                        <input type="submit" value="Submit"></form>
-                </div>
-            </div>
+            
         </div>
 
     </header>
+
+    <section>
+        <div class="add-row">
+            <div class= "addPopUp">
+                <p>Tell us more about your local surfspot</p>
+                <hr>
+                <form class="addPopUpForm">
+                    <label for="spotName">Spot Name</label>
+                    <input id="spotName" name="spotName" type="text">
+
+                    <label for="spotLocation">Spot Location</label>
+                    <input id="spotLocation" name="spotLocation" type="text">
+                    
+                    <label for="break">Break Type</label>
+                    <input type="text" name="break" id="break">
+
+                    <p>Tick features below if applicable:</p>
+
+                    <input id="parking" value="yes" name="parking" type="checkbox">
+                    <label for="parking">Parking Available</label>
+
+                    <input id="lifeguard" value="yes" type="checkbox">
+                    <label for="lifeguard">Lifeguard Services</label>
+
+                    <input id="surfschools" value="yes" type="checkbox">
+                    <label for="surfschools">Surf Schools</label>
+
+                    <input id="disabled" value="yes" type="checkbox">
+                    <label for="disabled">Disabled Access/Blue Flag</label>
+                    <br>
+                    <label for="crowd">Crowd Levels</label>
+                    <input type="range" id="for" name="crowdLevel" min="0" max="10">
+                    
+                    <p>Are you happy for us to make your surf spot public on Surf The West Contry website?</p>
+                    <label for="publcY">Yes</label>
+                    <input type="radio" name="public" id="publicY" required>
+                    <label for="publicN">No</label>
+                    <input type="radio" name="public" id="publicN">
+                    <br>
+                    <input type="submit" value="Submit">
+                </form>
+                <hr>
+            </div>
+        </div>
+    </section>
 
     <main>
 <!-- MAIN/HERO INFORMATION ABOUT THE PAGE -->

@@ -165,3 +165,6 @@ function initMap() {
 $("#addSurfSpotButton").click(function(){
     $(".addPopUp").slideToggle("slow");
 })
+
+
+$("#spotName, #spotLocation, #break").addClass("inputSize")

@@ -282,6 +282,7 @@ footer{
     color: white;
     background-color: #1e1e1e;
     padding: 8px;
+    font-size: 12px;
 }
 
 .addPopUp>p{
@@ -295,3 +296,4 @@ footer{
     width: 50%;
     display: block;
 }
+

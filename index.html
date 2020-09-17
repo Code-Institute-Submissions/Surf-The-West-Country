@@ -21,7 +21,7 @@
                 
             </div>
             <div class="addSurfSpot">
-                <button id ="addSurfSpotButton" class="sm-main-button"><i class="fas fa-plus-circle"></i> Add surfspots</button>
+                <button id ="addSurfSpotButton" onclick="fadePage()" class="sm-main-button"><i class="fas fa-plus-circle"></i> Add surfspots</button>
             </div>
             
         </div>
@@ -60,13 +60,13 @@
                     <label for="crowd">Crowd Levels</label>
                     <input type="range" id="for" name="crowdLevel" min="0" max="10">
                     
-                    <p>Are you happy for us to make your surf spot public on Surf The West Contry website?</p>
+                    <p>Are you happy for us to make your surf spot public on Surf The West Country website?</p>
                     <label for="publcY">Yes</label>
                     <input type="radio" name="public" id="publicY" required>
                     <label for="publicN">No</label>
                     <input type="radio" name="public" id="publicN">
                     <br>
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Submit" id="addButton" class="sm-main-button">
                 </form>
                 <hr>
             </div>

@@ -168,3 +168,6 @@ $("#addSurfSpotButton").click(function(){
 
 
 $("#spotName, #spotLocation, #break").addClass("inputSize")
+
+$("#addButton").addClass("shade-white");
+

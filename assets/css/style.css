@@ -277,8 +277,16 @@ footer{
     font-family: 'Poppins', sans-serif;
 }
 
+.add-section{
+    text-align: center;
+}
+
 .add-row{
     display: none;
+    width: 50%;
+    text-align: center;
+    position: relative;
+    left: 50%;
 }
 
 .addPopUp{
@@ -288,32 +296,23 @@ footer{
     font-size: 14px;
     width: 100%;
     display: inline-block;
+    text-align: center;
 }
 
 .addPopUp>form{
-    width: 65%;
     display: inline-block;
+    vertical-align: top;
+    text-align: center;
 }
 
 .addPopUp>p{
     margin-top: 0px;
     text-transform: uppercase;
     letter-spacing: 2px;
-}
-
-
-.addSurfSpotImage{
-    display: inline-block;
-    text-align: center;
-    opacity: 0.6;
-    width: 25%;
-}
-
-.addSurfSpotImage>img{
-    text-align: center;
+    font-size: 14px;
 }
 
 .inputSize{
-    width: 80%;
+    width: 100%;
     display: block;
 }

@@ -1,8 +1,7 @@
 body{
     font-family: 'Poppins', sans-serif;
-    margin: 0px;
     background:#263238; 
-    
+    margin: 0px;
 }
 
 header{
@@ -277,31 +276,34 @@ footer{
     font-family: 'Poppins', sans-serif;
 }
 
+
 .add-section{
-    text-align: left;
+    text-align: center;
     background: #FFFFFF;
     padding: 16px;
     overflow: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .add-row{
     display: none;
     width: 50%;
-    float: right;
-    clear: right;
 }
 
 .addPopUp{
-    color: white;
+    color: #FFFFFF;
     background-color:rgb(30,30,30);
+    border: 3px solid rgb(30,30,30);
     padding: 8px;
-    font-size: 14px;
+    font-size: 16px;
     width: 100%;
     display: inline-block;
-    text-align: left;
+    text-align: center;
+    
 }
 
-.addPopUp>form{
+.addPopUpForm{
     display: inline-block;
     vertical-align: top;
     text-align: center;
@@ -312,10 +314,11 @@ footer{
     margin-top: 0px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .inputSize{
-    width: 100%;
+    width: 50%;
+    margin-bottom: 6px;
     text-align: center;
 }

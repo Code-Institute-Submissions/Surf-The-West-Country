@@ -269,18 +269,20 @@ footer{
 
 .addSurfSpot{
     height: 36px;
+    overflow: auto;
 }
 
 #addSurfSpotButton{
     float: right;
     font-family: 'Poppins', sans-serif;
+    margin: 0px;
 }
 
 
 .add-section{
     text-align: center;
     background: #FFFFFF;
-    padding: 16px;
+    padding: 8px;
     overflow: auto;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -288,7 +290,7 @@ footer{
 
 .add-row{
     display: none;
-    width: 50%;
+    width: 100%;
 }
 
 .addPopUp{
@@ -297,16 +299,15 @@ footer{
     border: 3px solid rgb(30,30,30);
     padding: 8px;
     font-size: 16px;
-    width: 100%;
-    display: inline-block;
+    width: 50%;
     text-align: center;
-    
+    float: right; 
 }
 
 .addPopUpForm{
     display: inline-block;
     vertical-align: top;
-    text-align: center;
+    text-align: left;
 }
 
 
@@ -318,7 +319,8 @@ footer{
 }
 
 .inputSize{
-    width: 50%;
-    margin-bottom: 6px;
-    text-align: center;
+    width: 60%;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    display: block;
 }

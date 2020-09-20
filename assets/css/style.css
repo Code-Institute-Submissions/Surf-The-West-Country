@@ -319,8 +319,23 @@ footer{
 }
 
 .inputSize{
-    width: 60%;
+    width: 70%;
     text-align: left;
     font-family: 'Poppins', sans-serif;
     display: block;
+}
+
+.add-pop-button{
+    padding: 3px 10px;
+    margin: 6px 0px;
+    width: 50%;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    background: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: black;
+    outline: none;
 }

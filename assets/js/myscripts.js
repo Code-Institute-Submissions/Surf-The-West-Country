@@ -169,3 +169,28 @@ $("#addSurfSpotButton").click(function(){
 
 $("#spotName, #spotLocation, #break").addClass("inputSize")
 
+$("#fistralB").click(function(){
+    $("#hdF").slideToggle("slow");
+})
+
+$("#lustyb").click(function(){
+    $("#hdL").slideToggle("slow");
+})
+
+$("#perranpor").click(function(){
+    $("#hdP").slideToggle("slow");
+})
+
+
+/*document.getElementById(nameId).addEventListener(click, hideD());
+
+function hideD(nameId, classId){
+
+    var beachDescription = document.getElementById(classId);
+
+    if (beachDescripition.style.display == "none"){
+        beachDescription.style.display = "inline-block"
+    }
+}
+
+hideD(fistralB, hdF)*/

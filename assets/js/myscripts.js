@@ -7,23 +7,37 @@ $('.main-button').mouseleave(function(){
     $(this).removeClass('shade');
 });
 
-$('#north-button').click(function(){
-    $(".north-main").slideToggle();
-    $(".west-main").hide("slow");
-    $(".south-main").hide("slow");
+/*------------------ MAIN HERO BUTTONS ---------------- */
+
+$('#britanny-button').click(function(){
+    $(".britanny-main").slideToggle();
+    $(".lumiere-main").hide("slow");
+    $(".argent-main").hide("slow");
+    $(".landes-main").hide("slow");
 });
 
-$('#west-button').click(function(){
-    $(".west-main").slideToggle();
-    $(".north-main").hide("slow");
-    $(".south-main").hide("slow");
+$('#lumiere-button').click(function(){
+    $(".lumiere-main").slideToggle();
+    $(".britanny-main").hide("slow");
+    $(".argent-main").hide("slow");
+    $(".landes-main").hide("slow");
 });
 
-$('#south-button').click(function(){
-    $(".south-main").slideToggle();
-    $(".west-main").hide("slow");
-    $(".north-main").hide("slow");
+$('#argent-button').click(function(){
+    $(".argent-main").slideToggle();
+    $(".lumiere-main").hide("slow");
+    $(".britanny-main").hide("slow");
+    $(".landes-main").hide("slow");
 });
+
+$('#landes-button').click(function(){
+    $(".landes-main").slideToggle();
+    $(".lumiere-main").hide("slow");
+    $(".britanny-main").hide("slow");
+    $(".argent-main").hide("slow");
+});
+
+/*-----------------------------------------*/
 
 $(".col-subs").mouseenter(function (){
     $(this).addClass("shade-white");
@@ -166,7 +180,6 @@ $("#addSurfSpotButton").click(function(){
     $(".add-row").slideToggle("slow");
 })
 
-
 $("#spotName, #spotLocation, #break").addClass("inputSize")
 
 $("#fistralB").click(function(){
@@ -179,6 +192,7 @@ $("#lustyb").click(function(){
 
 $("#perranpor").click(function(){
     $("#hdP").slideToggle("slow");
+    $("#hdL").stop();
 })
 
 

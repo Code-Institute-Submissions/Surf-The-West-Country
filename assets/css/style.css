@@ -118,8 +118,8 @@ footer{
     padding: 0;
 }
 
-.hide-description>img{
-    border-radius: 2px;
+.hide-description{
+    display: none;
 }
 
 

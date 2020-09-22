@@ -101,15 +101,20 @@ footer{
 
 .card{
     color:  white;
-    border-right: 2px solid white;
-    margin: 10px 0px;
+    border-top: 2px solid white;
+    margin: 10px 10px;
     width: 30%;
     display: inline-block;
+    vertical-align: top;
 }
 
 .card>h4{
     letter-spacing: 2px;
+    font-weight: lighter;
+}
 
+.hide-description>ul{
+    padding: 0;
 }
 
 .col{

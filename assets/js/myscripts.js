@@ -83,98 +83,50 @@ $(".footer-link, .social-links").mouseleave(function(){
 
 /*-------------- NORTH MAIN BUTTON CONTENT ----------------*/
 
-let map;
+function initMap(){
 
-function initMap() {
+    var locations = [
+        ["1. Plage Des Blanc-Sablons", 48.3693, -4.7645, 1],
+        ["2. Fort-Bloqué, Guidel", 47.7344, -3.50439, 2]
+        ["3. Sainte-Barbe, Pouharnel", 47.5983, -3.1524, 3],
+        ["4. Les Dunes, Vendee", 46.56, -1.84, 4],
+        ["5. Les Conches, Vendee", 46.3866, -1.4689, 1],
+        ["6. Lacanau, Gironde", 44.995218, -1.202660, 2],
+        ["7. Carcans, Gironde",],
+        ["8. L'Estacade, Capbetron",],
+        ["9. Ondres Plage, Ondres",],
+        ["10. La Grande Plage, Biarritz",],
+        ["11. La Cote des Basques, Biarritz",],
+        ["12. Plade d'Hendaye",]
+    ];
 
-    map = new google.maps.Map(document.getElementById("hero-map"), {
-        zoom: 8,
-        center: {
-            lat: 50.503632,
-            lng: -4.652498
-        }
+    var map = new google.maps.Map(document.getElementById("hero-map"), {
+        zoom: 6,
+        center: new google.maps.LatLng(46.2276, 0.5792)
     });
 
-    /*------ FISTRAL BEACH -------*/
-    var infowindow = new google.maps.InfoWindow({
-        content: "<p><b>A.Fistral Beach</b></p>"
-    });
+    var infowindow = new google.maps.InfoWindow();
 
-    var fistral = new google.maps.Marker({
-        position: {lat: 50.4165, lng: -5.1002},
-        zoom: 12,
-        map
-    });
+    var marker, i;
 
-    fistral.addListener("click", () =>{
-        infowindow.open(map, fistral);
-    });
-     
-    /*------ LUSTY BEACH -------*/
+    for (i = 0; i < locations.length; i++){
+        marker = new google.maps.Marker({
+            position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+            map: map
+        });
 
-    var lusty = new google.maps.Marker({
-        position: {lat: 50.4218, lng: -5.0642},
-        zoom: 12,
-        map
-    });
+        google.maps.event.addListener(marker, 'click', (function(marker, i){
+            return function() {
+                infowindow.setContent(locations[i][0]);
+                infowindow.open(map, marker);
+            }
+        })(marker, i));
 
-    var infowindow = new google.maps.InfoWindow({
-        content: "<p><b>B.Lusty Glaze</b></p>"
-    });
+    }
 
-    lusty.addListener("click", () =>{
-        infowindow.open(map, lusty);
-    });
-
-    /*------ PERRAN BEACH -------*/
-
-    var perran = new google.maps.Marker({
-        position: {lat: 50.3444, lng: -5.1544},
-        zoom: 12,
-        map
-    });
-
-    var infowindow = new google.maps.InfoWindow({
-        content: "<p><b>C.Perranporth Beach</b></p>"
-    });
-
-    perran.addListener("click", () =>{
-        infowindow.open(map, perran);
-    });
-
-    /*------ WIDEMOUTH BEACH -------*/
-
-    var widemouth = new google.maps.Marker({
-        position: {lat: 50.7899, lng: -4.5545},
-        zoom: 12,
-        map
-    });
-
-    var infowindow = new google.maps.InfoWindow({
-        content: "<p><b>D.Widemouth Beach</b></p>"
-    });
-
-    widemouth.addListener("click", () =>{
-        infowindow.open(map, widemouth);
-    });
-
-    /*------ SENNEN BEACH -------*/
-
-    var sennen = new google.maps.Marker({
-        position: {lat: 50.0720, lng: -5.6947},
-        zoom: 12,
-        map
-    });
-
-    var infowindow = new google.maps.InfoWindow({
-        content: "<p><b>A.Sennen Cove</b></p>"
-    });
-
-    sennen.addListener("click", () =>{
-        infowindow.open(map, sennen);
-    });
-     
 }
+
+/*------------------------------------------------------*/
 
 $("#addSurfSpotButton").click(function(){
     $(".add-row").slideToggle("slow");
@@ -208,3 +160,13 @@ function hideD(nameId, classId){
 }
 
 hideD(fistralB, hdF)*/
+
+/*$(".tooltip").mouseenter(function(){
+    $(".toolTipText").css("visibility", "visible");
+})
+
+$(".tooltip").mouseleave(function(){
+    $(".toolTipText").css("visibility", "hidden");
+})*/
+
+

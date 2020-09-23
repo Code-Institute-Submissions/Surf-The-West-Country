@@ -60,14 +60,20 @@ $('.modal-button').mouseleave(function(){
 
 /*------------------SUBSCRIBE MODAL ------------------*/
 
-$(".clickMe").click(function(){
-    $(this).next("div").fadeIn()
-        $(".add-row").fadeIn()
-})
+$(".col-subs").click(function(){
+    $(".modalSub").fadeToggle("slow")
+});
 
 $(".close-button").click(function(){
     $(".modalSub").fadeOut("slow");
-})
+});
+
+
+
+$("#addSurfSpotButton").click(function(){
+    $(".add-row").fadeToggle("slow");
+});
+
 
 /*-----------------FOOTER LINKS ------*/
     

@@ -135,3 +135,6 @@ $("#addSurfSpotButton").click(function(){
 
 $("#spotName, #spotLocation, #break").addClass("inputSize");
 
+$(".toggleMainCard").click(function(){
+    $(this).next("div").slideToggle("slow");
+})

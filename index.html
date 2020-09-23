@@ -21,7 +21,7 @@
                 
             </div>
             <div class="addSurfSpot">
-                <button id ="addSurfSpotButton" class="sm-main-button"><i class="fas fa-plus-circle"></i> Add surfspots</button>
+                <button id ="addSurfSpotButton" class="sm-main-button clickMe"><i class="fas fa-plus-circle"></i> Add surfspots</button>
             </div>
             
         </div>
@@ -29,7 +29,7 @@
     </header>
 
     <section class="add-section">
-        <div class="add-row">
+        <div class="add-row modalSub">
             <div class= "addPopUp">
                 <p>Tell us more about your local surfspot</p>
                 <hr>
@@ -75,12 +75,14 @@
     </section>
 
     <main>
+
 <!-- MAIN/HERO INFORMATION ABOUT THE PAGE -->
         <div> 
             <p class="open-par">Find surf spots and beaches across the West Coast. Pick a location to find out more about beach facilities, surf schools, camping, lifeguard patrols and more. Happy waves!</p>
         </div>
 
-<!--TOPIC #1 - Search By Location-->
+<!------  LOCATIONS + GOOGLE MAPS ------->
+
         <div class="row"> 
             <div class="col-1">
                 <h2>Search By Location</h2>
@@ -99,11 +101,10 @@
             </div>
 
         </div>
-<!--FEATURES OF TOPIC # 1 == MAP + CARDS -->
 
-<!-------------------BRITANNY----------------------->
+<!------- CARDS -------->
 
-        <div class="row"> 
+        <div class="row"> <!---------BRITANNY-------->
             <div class="col britanny-main">
 
                 <div class="card">
@@ -168,9 +169,7 @@
 
         </div>
 
-<!--------------------------------COTE DE LUMIERE---------------------------->
-
-        <div class="row"> 
+        <div class="row"> <!------------COTE DE LUMIERE---------->
 
             <div class="col lumiere-main">
 
@@ -329,24 +328,23 @@
             </div>
         </div>
 
-
     </main>
 
     <section class="margin">
 
-        <div class="row">
-            <div onclick="openModalSub()" class="col-subs">
+        <div class="row clickMe">
+            <div class ="col-subs">
                 <p>Want to receive weekly updates and surf reports? Subscribe below for more!</p>
-                <button  class="sm-main-button" id="open-modal">Subscribe</button>
+                <button class="sm-main-button open-modal ">Subscribe</button>
                 
             </div>
         </div>
 
-        <div id= "modalSub" onclick="closeWindow()">
-            <div id="modalContent">
+        <div class = "modalSub">
+            <div class="modalContent">
                 <div class="modal-head">
                     <p>JOIN THE CLUB</p>
-                    <span onclick="closeModalSub()" id="close-button"><i class="fas fa-times"></i></span>
+                    <span onclick="closeModalSub()" class="close-button"><i class="fas fa-times"></i></span>
                     <hr>
                     <p><i>Fill the form below to join our weekly mailing list on the latests news and surf reports</i></p>
                 

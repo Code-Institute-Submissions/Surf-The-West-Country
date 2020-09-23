@@ -140,7 +140,7 @@ footer{
     text-align: center;
 }
 
-#modalSub{
+.modalSub{
     background-color:rgb(52,58,64, 0.5);
     display: none;
     z-index: 1;
@@ -157,7 +157,7 @@ footer{
     display: none;
 }
 
-#modalContent{
+.modalContent{
     background-color:#3E4551;
     width: 50%;
     text-align: center;

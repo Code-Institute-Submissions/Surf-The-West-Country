@@ -57,20 +57,19 @@ $('.modal-button').mouseleave(function(){
     $(this).removeClass('shade-dark-blue');
 });
 
-document.getElementById("open-modal").addEventListener("click", openModalSub)
 
-function openModalSub(){
-    var modal = document.getElementById("modalSub");
-    modal.style.display = "block"
-}
+/*------------------SUBSCRIBE MODAL ------------------*/
 
-document.getElementById("close-button").addEventListener("click", closeModalSub)
+$(".clickMe").click(function(){
+    $(this).next("div").fadeIn()
+        $(".add-row").fadeIn()
+})
 
-function closeModalSub(){
+$(".close-button").click(function(){
+    $(".modalSub").fadeOut("slow");
+})
 
-    var modalClose = document.getElementById("modalSub");
-    modalClose.style.display = "none"
-}
+/*-----------------FOOTER LINKS ------*/
     
 $(".footer-link, .social-links").mouseenter(function(){
     $(this).addClass('hover-dark');
@@ -129,11 +128,15 @@ function initMap(){
 
 /*----------  https://gist.github.com/simonbingham/2652757 -------------------------------------*/
 
-$("#addSurfSpotButton").click(function(){
+
+/*$("#addSurfSpotButton").click(function(){
     $(".add-row").slideToggle("slow");
-});
+});*/
 
 $("#spotName, #spotLocation, #break").addClass("inputSize");
+
+
+/* -------------- MAIN CARDS SLIDE TOGGLING --------- */
 
 $(".toggleMainCard").click(function(){
     $(this).next("div").slideToggle("slow");

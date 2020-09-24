@@ -61,18 +61,20 @@ $('.modal-button').mouseleave(function(){
 /*------------------SUBSCRIBE MODAL ------------------*/
 
 $(".col-subs").click(function(){
-    $(".modalSub").fadeToggle("slow")
+    $("#modalSubId").fadeToggle("slow")
 });
 
 $(".close-button").click(function(){
-    $(".modalSub").fadeOut("slow");
+    $("#modalSubId").fadeOut("slow");
+    $(".add-row").fadeOut("slow");
 });
-
 
 
 $("#addSurfSpotButton").click(function(){
-    $(".add-row").fadeToggle("slow");
+    $(".add-row").fadeIn("slow");
 });
+
+
 
 
 /*-----------------FOOTER LINKS ------*/

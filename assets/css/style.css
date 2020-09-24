@@ -213,7 +213,7 @@ footer{
     font-family: 'Poppins', sans-serif;
 }
 
-#close-button{
+.close-button{
     display: inline-block;
     color: white;
     font-size: 14px;
@@ -289,7 +289,6 @@ footer{
     margin: 0px;
 }
 
-
 .add-section{
     text-align: center;
     background: #FFFFFF;
@@ -310,9 +309,10 @@ footer{
     border: 3px solid rgb(30,30,30);
     padding: 8px;
     font-size: 16px;
-    width: 40%;
+    width: 50%;
     text-align: center;
-    float: right; 
+    position: relative;
+    left: 25%;
 }
 
 .addPopUpForm{

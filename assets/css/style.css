@@ -89,7 +89,7 @@ footer{
     text-align: center;
     letter-spacing: 2px;
     margin-bottom: 10px;
-    padding: 10px, 5px;
+    padding: 10px 5px;
     color: white;
 }
 
@@ -293,7 +293,6 @@ footer{
 .add-section{
     text-align: center;
     background: #FFFFFF;
-    padding: 8px;
     overflow: auto;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -356,5 +355,37 @@ footer{
 .social-links-two{
     list-style-type: none;
     display: inline-block;
+    padding: 4px;
+    font-size: 22px;
 }
 
+.tooltipBox{
+    position: relative;
+    display: none;
+}
+
+.tooltipBox .tooltipContent{
+    width: 160px;
+    font-size: 12px;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    margin-left: -22px;
+    padding: 4px;
+    word-break: break-word;
+}
+
+.surf-link{
+    text-decoration: underline;
+}
+
+.open-par{
+    background: #ffa000;
+    color: #1e1e1e;
+    margin: 0;
+    padding: 2px 6px;
+    font-size: 14px;
+    text-align: center;
+
+}

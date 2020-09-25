@@ -150,3 +150,12 @@ $(".toggleMainCard").click(function(){
     $(this).next("div").slideToggle("slow");
 })
 
+/*------------ ICON LEGEND ----------*/
+
+$(".legend").mouseenter(function(){
+    $(this).next("div").fadeIn("fast");
+});
+
+$(".legend").mouseleave(function(){
+    $(this).next("div").fadeOut("fast")
+});

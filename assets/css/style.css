@@ -15,10 +15,8 @@ main{
     color: white;
 }
 
-main>h2{
-    font-size: 26px;
-    letter-spacing: 2px;
-    
+.col-2{
+    margin: 16px;
 }
 
 .main-button{
@@ -41,20 +39,17 @@ a {
     text-decoration: none;
 }
 
-
 .shade {
     background-color: #1e1e1e;
     border: 2px solid #1e1e1e;
     border-radius: 10px;
 }
 
-
 /*-------FOOTER-------*/
 
 footer{
     background: #1e1e1e;
-    min-height: 35vh;
-    
+    padding-bottom: 8px;
 }
 
 .row-footer{
@@ -113,6 +108,7 @@ footer{
 .card>h4{
     letter-spacing: 2px;
     font-weight: lighter;
+    font-size: 18px;
 }
 
 .hide-description>ul{
@@ -123,7 +119,6 @@ footer{
     display: none;
 }
 
-
 .col{
     width: 100%;
     margin: 0px;
@@ -131,7 +126,6 @@ footer{
     text-align: center;
     display: none;
 }
-
 
 .map {
     min-height: 360px;
@@ -182,7 +176,6 @@ footer{
     width: 90%;
     display: inline-block;
 }
-
 
 .modal-form{
     padding: 8px;
@@ -318,29 +311,30 @@ footer{
 .addPopUpForm{
     display: inline-block;
     vertical-align: top;
-    text-align: left;
+    letter-spacing: 2px;
 }
-
 
 .addPopUp>p{
     margin-top: 0px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .inputSize{
-    width: 70%;
-    text-align: left;
+    width: 95%;
     font-family: 'Poppins', sans-serif;
-    display: block;
+}
+
+input{
+    margin: 6px 0px;
 }
 
 .add-pop-button{
     padding: 3px 10px;
-    margin: 6px 0px;
+    margin: 10px 0px;
     width: 50%;
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 2px;
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
@@ -350,7 +344,6 @@ footer{
     color: black;
     outline: none;
 }
-
 
 .social-links-two{
     list-style-type: none;
@@ -381,11 +374,14 @@ footer{
 }
 
 .open-par{
-    background: #f9a825;
-    color: #1e1e1e;
+    background: #1e1e1e;
+    color: white; 
     margin: 0;
     padding: 2px 10px;
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
+}
 
+textarea{
+    margin-top: 16px;
 }

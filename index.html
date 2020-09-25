@@ -36,13 +36,13 @@
                 <hr>
                 <form class="addPopUpForm">
                     <label for="spotName">Spot Name</label>
-                    <input id="spotName" name="spotName" type="text">
+                    <input id="spotName" name="spotName" type="text" required>
                     
                     <label for="spotLocation">Spot Location</label>
-                    <input id="spotLocation" name="spotLocation" type="text">
+                    <input id="spotLocation" name="spotLocation" type="text" required>
                     
                     <label for="break">Break Type</label>
-                    <input type="text" name="break" id="break">
+                    <input type="text" name="break" id="break" required>
     
                     <p>Tick features below if applicable</p>
 
@@ -56,17 +56,22 @@
                     <label for="surfschools">Surf Schools</label>
 
                     <input id="disabled" value="yes" type="checkbox">
-                    <label for="disabled">Disabled Access/Blue Flag</label>
+                    <label for="disabled">Disabled Access</label>
                     <br>
                     <label for="crowd">Crowd Levels</label>
                     <input type="range" id="for" name="crowdLevel" min="0" max="10">
                     
+                    <textarea class="inputSize">Additional Information</textarea>
+                    
                     <p>Are you happy for us to make your surf spot public on Surf The West Country website?</p>
+
                     <label for="publcY">Yes</label>
                     <input type="radio" name="public" id="publicY" required>
                     <label for="publicN">No</label>
                     <input type="radio" name="public" id="publicN">
+
                     <br>
+
                     <input type="submit" value="Submit" id="addButton" class="add-pop-button">
                 </form>
 
@@ -79,19 +84,17 @@
 
 <!-- MAIN/HERO INFORMATION ABOUT THE PAGE -->
         <div> 
-            <p class="open-par">Find surf spots and beaches across the West Coast. Pick a location to find out more about beach facilities, surf schools, forecast, and more.</p>
+            <p class="open-par">Find surf spots and beaches across the West Coast of France. Choose a location to find out more. </p>
         </div>
 
 <!------  LOCATIONS + GOOGLE MAPS ------->
 
         <div class="row"> 
-            <div class="col-1">
-                <h2>Search By Location</h2>
-            </div>
+
             <div class="col-2">
                 <div class="main-boxes">
                     <button class="main-button" id="britanny-button">BRITANNY</button>
-                    <button class="main-button" id="lumiere-button">CôTE DE LUMIERE</button>
+                    <button class="main-button" id="lumiere-button">CôTE DE LUMIèRE</button>
                     <button class="main-button" id="argent-button">CôTE D'ARGENT</button>
                     <button class="main-button" id="landes-button">LANDES & BASQUE</button>
                 </div>
@@ -274,7 +277,7 @@
 
                 <div class="card">
 
-                    <h4 class="toggleMainCard"><i>Les Dunes, Vendee</i></h4>
+                    <h4 class="toggleMainCard"><i>4. Les Dunes, Vendee</i></h4>
                     <div class="hide-description">
                         <p>An exposed beach break popular for its soft fun waves. The swell is never too big around here but it works best at mid/low tides when the offshore wind is northeast. Les Dunes is good for beginners and longboarders who like a nice mellow wall even though it can get flat during the summer months. The beach is located right in front of a camping site and a few metres away from the village which is ideal if you are planning to stay a couple of days. If you are an intermediate surfer looking for bigger waves you should check out the breaks further south to Vendee.</p>
                         
@@ -323,7 +326,7 @@
 
 
 
-                    <h4 class="toggleMainCard"><i>Les Conches, Vendee</i></h4>
+                    <h4 class="toggleMainCard"><i>5. Les Conches, Vendee</i></h4>
                     <div class="hide-description">
                         <p>This is probably one of the best surf spots in Vendee offering a hollow and powerful right under offshore winds from east northeast. The spot is very popular amongst locals due to its all-year-round surfable conditions besides getting better from April to September. It provides a really nice surfing session for intermediate surfers since it tends to receive a good size swell. There is one surf school located in the village of Les Conches that provides direct access to the beach and camping facilities.</p>
                         
@@ -377,7 +380,7 @@
 
                 <div class="card">
 
-                    <h4 class="toggleMainCard"><i>Lacanau, Gironde</i></h4>
+                    <h4 class="toggleMainCard"><i>6. Lacanau, Gironde</i></h4>
                     <div class="hide-description">
                         <p>One of the best surfing spots in France and home to WSL Caraibos Lacanau Pro. 
                         Lacanau has an extensive 14km shoreline that offers amazing surf to all levels, although if the swell is big it can become quite rough, creating powerful and hollow waves suitable for more advanced surfers. 
@@ -430,7 +433,7 @@
 
                 <div class="card">
 
-                    <h4 class="toggleMainCard">Carcans, Gironde</h4>
+                    <h4 class="toggleMainCard">7. Carcans, Gironde</h4>
                     <div class="hide-description">
                         <p>Located a few km north to Lacanau, this break offers a very nice small wave that beginners find way much easier to ride than waves further down in the south. 
                         Additionally, this spot is always one of the less crowded in Gironde even during the summer months despite providing very enjoyable surfing sessions to all levels throughout the year. 
@@ -488,7 +491,7 @@
 
                 <div class="card">
                     
-                    <h4 class="toggleMainCard"><i>L'Estacade, Capbreton</i></h4>
+                    <h4 class="toggleMainCard"><i>8. L'Estacade, Capbreton</i></h4>
                     <div class="hide-description">
                         <p>A stone’s throw away from the famous Hossegor beach! 
                         L’Estacade forms a waist high wave for beginners and intermediates, and it is sheltered from strong north winds due to the jetty located south of the port. Besides being a good beginners surf spot, it can become very crowded especially during the Summer.</p>
@@ -537,7 +540,7 @@
                 </div>
 
                 <div class="card">
-                    <h4 class="toggleMainCard"><i>Ondres Plage, Ondres</i></h4>
+                    <h4 class="toggleMainCard"><i>9. Ondres Plage, Ondres</i></h4>
                     <div class="hide-description">
                         <p>Another really good surf spot in Landes just a few miles away from Hossegor with consistent surfing all year round. Located in a long stretch of sand, Ondres Plage has plenty of space for everyone as it rarely gets crowded even on weekends! 
                         The wave is powerful and hollow with good barrels when the swell is big, however, most of the time you can find a gentle wave ideal for those who are learning to surf. Ondres works best in low/mid tides and offers a good selection of both left and rights. There are two surf schools located on the beach, a train station and a campsite just a few minutes away.</p>
@@ -587,7 +590,7 @@
 
 
                 <div class="card">
-                    <h4 class="toggleMainCard"><i>La Grande Plage, Biarritz</i></h4>
+                    <h4 class="toggleMainCard"><i>10. La Grande Plage, Biarritz</i></h4>
                     <div class="hide-description">
                         <p>We finally got to the furthest south part of the West Coast! La Grande Plage is a memorable break in the history of Basque Coast surfing where you will find not only good waves but also a town revolving around surf. 
                         You probably won’t have to worry about surf schools and rentals as they happen to have in spades here. This spot offers a good medium hollow wave that works any time of the year despite the crowded line-ups. 
@@ -637,7 +640,7 @@
 
 
                 <div class="card">
-                    <h4 class="toggleMainCard"><i>La Cote des Basques, Biarritz</i></h4>
+                    <h4 class="toggleMainCard"><i>11. La Côte des Basques, Biarritz</i></h4>
                     <div class="hide-description">
                         <p>Home to the annual WSL Longboard Pro Biarritz contest and the birthplace of France’s surfing, this famous beach break has the perfect smooth wave for a fun session out in the water. The surf is best for beginners next to the headland where it is sheltered from north winds forming an easy mellow wall. It is usually better in low/mid tides when the offshore wind is southeasterly. 
                         Despite the vibrant atmosphere, it can get really packed with tourists and travelling surfers, especially during the summer months. As you would expect, there are plenty of highly certified surf schools and surf camps all over the shoreline.</p>
@@ -686,7 +689,7 @@
 
 
                 <div class="card">
-                    <h4 class="toggleMainCard"><i>Plage d'Hendaye</i></h4>
+                    <h4 class="toggleMainCard"><i>12. Plage d'Hendaye</i></h4>
                     <div class="hide-description">
                         <p>Another iconic beach in the French Basque Coast offering very good conditions throughout the year.
                         It is a nice spot for beginner and intermediate surfers, short and longboards when the other breaks are closing-out. The waves tend to be good next to the south jetty where you will find a number of surf schools too. 

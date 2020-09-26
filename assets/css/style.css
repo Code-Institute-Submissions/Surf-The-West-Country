@@ -413,7 +413,7 @@ textarea{
     border-radius: 10px;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 700px){
     .main-button{
         width: 70%;
         padding: 10px;
@@ -450,7 +450,12 @@ textarea{
 
 }
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 475px){
+
+    body{
+        overflow-x: hidden;
+    }
+
     .col-logo{
         padding-left: 0px;
         padding-bottom: 6px;

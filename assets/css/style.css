@@ -326,7 +326,7 @@ footer{
 }
 
 .inputSize{
-    width: 95%;
+    width: 70%;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -411,4 +411,59 @@ textarea{
     color: white;
     border: 2px solid #1e1e1e;
     border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px){
+    .main-button{
+        width: 70%;
+        padding: 10px;
+    }
+
+    .card{
+        width: 100%;
+        display: block;
+        padding: 4px;
+    }
+
+    .col-footer{
+        width: 100%;
+        display: block;
+    }
+
+    .tooltipBox .tooltipContent{
+        padding-left: 12px;
+    }
+
+    .map{
+        margin: 0px;
+    }
+
+    .addPopUp, .modalContent{
+        margin: 8px;
+        position: unset;
+        width: auto;
+    }
+
+    .close-button{
+        vertical-align: top;
+    }
+
+}
+
+@media only screen and (max-width: 400px){
+    .col-logo{
+        padding-left: 0px;
+        padding-bottom: 6px;
+    }
+
+    .row{
+        text-align: center;
+    }
+
+    #addSurfSpotButton{
+        overflow: hidden;
+        padding: 6px;
+        float: none;
+        width: 100%;
+    }
 }

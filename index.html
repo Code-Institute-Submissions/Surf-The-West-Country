@@ -758,7 +758,7 @@
         <div class = "modalSub" id="modalSubId">
             <div class="modalContent">
                 <div class="modal-head">
-                    <p class="modal-head-p">JOIN THE CLUB</p>
+                    <p class="modal-head-p font">JOIN THE CLUB</p>
                     <span class="close-button"><i class="fas fa-times"></i></span>
                     <hr>
                     <p class="modal-head-p"><i>Fill the form below to join our weekly mailing list on the latests news and surf reports</i></p>
@@ -767,15 +767,22 @@
 
                 <form class="modal-form" action="#">
                     <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstName">
+                    <input type="text" id="fname" class="modal-input" name="firstName">
 
                     <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastName">
+                    <input type="text" id="lname" class="modal-input" name="lastName">
 
                     <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="email" class="modal-input" name="email">
 
-                    <input type="button" class="modal-button" value="submit">
+                    <br>
+
+                    <input type="checkbox" id="terms" class="modal-input" name="terms" value="yes">
+                    <label class="terms" for="terms">By ticking this button I acknowledge that I have read the Surf The West Country Terms & Conditions would. 
+                    I would like to receive promotional content from Surf The West Country.</label>
+                    
+
+                    <input type="button" class="add-pop-button" value="submit">
                 </form>
             </div>
         </div>

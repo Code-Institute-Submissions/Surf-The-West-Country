@@ -83,8 +83,8 @@ footer{
     font-size: 10px;
     text-align: center;
     letter-spacing: 2px;
-    margin-bottom: 10px;
-    padding: 10px 5px;
+    margin: 0px;
+    padding: 10px;
     color: white;
 }
 
@@ -177,6 +177,10 @@ footer{
     display: inline-block;
 }
 
+.font{
+    font-size: 18px;
+}
+
 .modal-form{
     padding: 8px;
 }
@@ -200,10 +204,11 @@ footer{
     margin: 4px 0px;
 }
 
-.modal-form>input{
-    width: 50%;
-    padding: 6px;
-    margin-bottom: 4px;
+.modal-input{
+    width: 70%;
+    border: 2px solid white;
+    border-radius: 2px;
+    margin: 6px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -384,4 +389,9 @@ input{
 
 textarea{
     margin-top: 16px;
+}
+
+.terms{
+    font-size: 10px;
+    display: inline-block;
 }

@@ -1,4 +1,5 @@
 
+
 $('.main-button').mouseenter(function(){
     $(this).addClass('shade');
 });
@@ -7,31 +8,32 @@ $('.main-button').mouseleave(function(){
     $(this).removeClass('shade');
 });
 
+
 /*------------------ MAIN HERO BUTTONS ---------------- */
 
 $('#britanny-button').click(function(){
-    $(".britanny-main").slideToggle();
+    $(".britanny-main").slideToggle("slow");
     $(".lumiere-main").hide("slow");
     $(".argent-main").hide("slow");
     $(".landes-main").hide("slow");
 });
 
 $('#lumiere-button').click(function(){
-    $(".lumiere-main").slideToggle();
+    $(".lumiere-main").slideToggle("slow");
     $(".britanny-main").hide("slow");
     $(".argent-main").hide("slow");
     $(".landes-main").hide("slow");
 });
 
 $('#argent-button').click(function(){
-    $(".argent-main").slideToggle();
+    $(".argent-main").slideToggle("slow");
     $(".lumiere-main").hide("slow");
     $(".britanny-main").hide("slow");
     $(".landes-main").hide("slow");
 });
 
 $('#landes-button').click(function(){
-    $(".landes-main").slideToggle();
+    $(".landes-main").slideToggle("slow");
     $(".lumiere-main").hide("slow");
     $(".britanny-main").hide("slow");
     $(".argent-main").hide("slow");
@@ -40,12 +42,12 @@ $('#landes-button').click(function(){
 /*-----------------------------------------*/
 
 $(".col-subs").mouseenter(function (){
-    $(this).addClass("shade-white");
+    $(this).addClass("shade-black");
     $(".sm-main-button").addClass("shade");
 })
 
 $(".col-subs").mouseleave(function (){
-    $(this).removeClass("shade-white");
+    $(this).removeClass("shade-black");
     $(".sm-main-button").removeClass("shade");
 })
 
@@ -74,7 +76,13 @@ $("#addSurfSpotButton").click(function(){
     $(".add-row").fadeIn("slow");
 });
 
+$("#addButton, #formButton").mouseenter(function(){
+    $(this).addClass("shade-dark-blue");
+});
 
+$("#addButton, #formButton").mouseleave(function(){
+    $(this).removeClass("shade-dark-blue");
+})
 
 
 /*-----------------FOOTER LINKS ------*/
@@ -86,6 +94,7 @@ $(".footer-link, .social-links").mouseenter(function(){
 $(".footer-link, .social-links").mouseleave(function(){
     $(this).removeClass('hover-dark');
 })
+
 
 /*-------------- GOOGLE MAP MULTIPLE MARKERS ----------------*/
 
@@ -137,12 +146,7 @@ function initMap(){
 /*----------  https://gist.github.com/simonbingham/2652757 -------------------------------------*/
 
 
-/*$("#addSurfSpotButton").click(function(){
-    $(".add-row").slideToggle("slow");
-});*/
-
 $("#spotName, #spotLocation, #break").addClass("inputSize");
-
 
 /* -------------- MAIN CARDS SLIDE TOGGLING --------- */
 
@@ -159,3 +163,4 @@ $(".legend").mouseenter(function(){
 $(".legend").mouseleave(function(){
     $(this).next("div").fadeOut("fast")
 });
+

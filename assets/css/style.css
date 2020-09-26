@@ -448,6 +448,10 @@ textarea{
         vertical-align: top;
     }
 
+    .addPopUp, .addPopUpForm{
+        overflow-y: scroll
+    }
+
 }
 
 @media only screen and (max-width: 475px){

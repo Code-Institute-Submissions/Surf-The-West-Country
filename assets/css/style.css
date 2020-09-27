@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Poppins', sans-serif;
     background:#263238; 
@@ -415,25 +419,44 @@ textarea{
 }
 
 
+/*------------MEDIA QUERIES--------------*/
+
+@media only screen and (max-width: 925px){
+    .main-button{
+        margin: 4px;
+        padding: 10px;
+    }
+}
+
+@media only screen and (min-width: 925px) and (max-width: 1100px){
+    .card{
+        width: 25%;
+    }
+}
+
 @media only screen and (max-width: 800px){
     .open-par{
         font-size: 14px;
     }
+
+    .card{
+        padding: 8px;
+        width: 100%;
+        display: block;
+    }
+
 }
 
 
+@media only screen and (max-width: 740px){
 
+    body{
+        overflow-x: hidden;
+    }
 
-@media only screen and (max-width: 700px){
     .main-button{
         width: 70%;
         padding: 10px;
-    }
-
-    .card{
-        width: 100%;
-        display: block;
-        padding: 4px;
     }
 
     .col-footer{
@@ -465,7 +488,7 @@ textarea{
 
 }
 
-@media only screen and (max-width: 475px){
+@media only screen and (max-width: 500px){
 
     body{
         overflow-x: hidden;

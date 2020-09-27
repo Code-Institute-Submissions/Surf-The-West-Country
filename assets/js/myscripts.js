@@ -164,3 +164,8 @@ $(".legend").mouseleave(function(){
     $(this).next("div").fadeOut("fast")
 });
 
+$(".main-button").click(function(){
+    document.querySelector(".card").scrollIntoView({
+        behavior: "smooth"
+    });
+})

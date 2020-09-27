@@ -8,6 +8,7 @@ function sendMail(contactForm){
     .then(
         function(response){
             console.log("SUCCESS", response);
+            alert("Thank you. Email sent successfully!");
         },
         function(error){
             console.log("FAILED", error);
@@ -35,6 +36,7 @@ function addSpotMail(surfForm){
     .then(
         function(responseTwo){
             console.log("SUCCESS", responseTwo);
+            alert("Thank you. Email sent successfully!");
         },
         function(errorTwo){
             console.log("FAILED", errorTwo);

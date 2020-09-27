@@ -154,6 +154,14 @@ $(".toggleMainCard").click(function(){
     $(this).next("div").slideToggle("slow");
 })
 
+$(".toggleMainCard").mouseenter(function(){
+    $(this).addClass("bold")
+})
+
+$(".toggleMainCard").mouseleave(function(){
+    $(this).removeClass("bold")
+})
+
 /*------------ ICON LEGEND ----------*/
 
 $(".legend").mouseenter(function(){
@@ -169,3 +177,5 @@ $(".main-button").click(function(){
         behavior: "smooth"
     });
 })
+
+

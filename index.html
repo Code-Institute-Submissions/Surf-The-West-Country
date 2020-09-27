@@ -7,6 +7,9 @@
     <script src="https://kit.fontawesome.com/b39ca5d2ff.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap" rel="stylesheet">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
     <script type="text/javascript">
         (function(){
             emailjs.init("user_DNH0IhXpLEsBPwX7FOPXP");
@@ -40,7 +43,7 @@
                 <p class="modal-head-p">Tell us more about your local surfspot</p>
                 <span class="close-button"><i class="fas fa-times"></i></span>
                 <hr>
-                <form onsubmit="return sendMail(this);" class="addPopUpForm">
+                <form onsubmit="return addSpotMail(this);" class="addPopUpForm">
                     <label for="spotName" class="modal-form-label">Spot Name</label>
                     <input id="spotName" name="spotName" type="text" required>
                     
@@ -49,36 +52,36 @@
                     
                     <label for="break" class="modal-form-label">Break Type</label>
                     <input type="text" name="break" id="break" required>
-    
+
                     <p>Tick features below if applicable</p>
 
                     <input id="parking" value="yes" name="parking" type="checkbox">
                     <label for="parking">Parking Available</label>
 
-                    <input id="lifeguard" value="yes" type="checkbox">
+                    <input id="lifeguard" name="lifeguard" value="yes" type="checkbox">
                     <label for="lifeguard">Lifeguard Services</label>
 
-                    <input id="surfschools" value="yes" type="checkbox">
+                    <input id="surfschools" name="surfschool" value="yes" type="checkbox">
                     <label for="surfschools">Surf Schools</label>
 
-                    <input id="disabled" value="yes" type="checkbox">
+                    <input id="disabled" name="disabled" value="yes" type="checkbox">
                     <label for="disabled">Disabled Access</label>
                     <br>
                     <label for="crowd">Crowd Levels</label>
                     <input type="range" id="for" name="crowdLevel" min="0" max="10">
                     
-                    <textarea class="inputSize">Additional Information</textarea>
+                    <textarea name="additional" class="inputSize">Additional Information</textarea>
                     
                     <p>Are you happy for us to make your surf spot public on Surf The West Country website?</p>
 
                     <label for="publcY">Yes</label>
-                    <input type="radio" name="public" id="publicY" required>
+                    <input type="radio" name="public" value="yes" id="publicY" required>
                     <label for="publicN">No</label>
-                    <input type="radio" name="public" id="publicN">
+                    <input type="radio" value="no" name="public" id="publicN">
 
                     <br>
 
-                    <input type="submit" value="Submit" id="addButton" class="add-pop-button">
+                    <input type="submit" value="submit" id="addButton" class="add-pop-button">
                 </form>
 
             </div>
@@ -779,7 +782,7 @@
                     <input type="text" id="lname" class="modal-input" name="lastName">
 
                     <label class="modal-form-label" for="email">Email Address</label>
-                    <input type="email" id="email" class="modal-input" name="email">
+                    <input type="text" id="email" class="modal-input" name="email">
 
                     <br>
 
@@ -787,7 +790,7 @@
                     <label class="terms" for="terms">By ticking this button I acknowledge that I have read the Surf The West Country Terms & Conditions would. 
                     I would like to receive promotional content from Surf The West Country.</label>
                     
-                    <input type="button" id="formButton" class="add-pop-button" value="submit">
+                    <input type="submit" id="formButton" class="add-pop-button" name="submit" value="submit">
                 </form>
             </div>
         </div>
@@ -836,10 +839,6 @@
     <!--MAIL JS-->
 
     <script src="assets/js/sendEmail.js"></script>
-
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
-    </script>
 
 </body>
 </html>

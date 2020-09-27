@@ -134,9 +134,8 @@ footer{
 }
 
 .col{
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
+    margin: 10px;
+    padding: 10px;
     text-align: center;
     display: none;
 }
@@ -452,12 +451,11 @@ textarea{
 
     .card{
         padding: 8px;
-        width: 100%;
+        width: auto;
         display: block;
     }
 
 }
-
 
 @media only screen and (max-width: 740px){
 

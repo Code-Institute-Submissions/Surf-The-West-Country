@@ -7,6 +7,11 @@
     <script src="https://kit.fontawesome.com/b39ca5d2ff.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap" rel="stylesheet">
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("user_DNH0IhXpLEsBPwX7FOPXP");
+        })();
+    </script>
     <script type="text/javascript" src="assets/js/jquery-3.5.1.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -35,7 +40,7 @@
                 <p class="modal-head-p">Tell us more about your local surfspot</p>
                 <span class="close-button"><i class="fas fa-times"></i></span>
                 <hr>
-                <form class="addPopUpForm">
+                <form onsubmit="return sendMail(this);" class="addPopUpForm">
                     <label for="spotName" class="modal-form-label">Spot Name</label>
                     <input id="spotName" name="spotName" type="text" required>
                     
@@ -766,7 +771,7 @@
                 
                 </div>
 
-                <form action="#">
+                <form onsubmit="return sendMail(this);">
                     <label class="modal-form-label" for="fname">First Name</label>
                     <input type="text" id="fname" class="modal-input" name="firstName">
 
@@ -828,6 +833,13 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBe8UK689XkHHCkHCMqLsLeV0ubBNU-AaI&callback=initMap"></script>
     
+    <!--MAIL JS-->
+
+    <script src="assets/js/sendEmail.js"></script>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
 
 </body>
 </html>

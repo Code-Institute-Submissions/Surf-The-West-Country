@@ -107,6 +107,7 @@ footer{
     color:  white;
     border-top: 2px solid white;
     margin: 10px 10px;
+    padding: 8px;
     width: 30%;
     display: inline-block;
     vertical-align: top;
@@ -413,6 +414,16 @@ textarea{
     border-radius: 10px;
 }
 
+
+@media only screen and (max-width: 800px){
+    .open-par{
+        font-size: 14px;
+    }
+}
+
+
+
+
 @media only screen and (max-width: 700px){
     .main-button{
         width: 70%;
@@ -462,7 +473,7 @@ textarea{
 
     .col-logo{
         padding-left: 0px;
-        padding-bottom: 6px;
+        padding-bottom: 12px;
     }
 
     .row{
@@ -474,5 +485,25 @@ textarea{
         padding: 6px;
         float: none;
         width: 100%;
+    }
+
+    header{
+        padding-bottom: 16px;
+    }
+
+    .open-par{
+        padding: 10px 6px;
+    }
+
+    .card{
+        padding: 8px;
+    }
+
+    .col{
+        margin: 0px;
+    }
+
+    .col-logo>img{
+        width: 200;
     }
 }

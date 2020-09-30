@@ -553,3 +553,7 @@ textarea{
         width: 200;
     }
 }
+
+.hide-message{
+    display: none;
+}

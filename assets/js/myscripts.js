@@ -12,28 +12,28 @@ $('.main-button').mouseleave(function(){
 /*------------------ MAIN HERO BUTTONS ---------------- */
 
 $('#britanny-button').click(function(){
-    $(".britanny-main").slideToggle("slow");
+    $(".britanny-main").fadeToggle("slow");
     $(".lumiere-main").hide("slow");
     $(".argent-main").hide("slow");
     $(".landes-main").hide("slow");
 });
 
 $('#lumiere-button').click(function(){
-    $(".lumiere-main").slideToggle("slow");
+    $(".lumiere-main").fadeToggle("slow");
     $(".britanny-main").hide("slow");
     $(".argent-main").hide("slow");
     $(".landes-main").hide("slow");
 });
 
 $('#argent-button').click(function(){
-    $(".argent-main").slideToggle("slow");
+    $(".argent-main").fadeToggle("slow");
     $(".lumiere-main").hide("slow");
     $(".britanny-main").hide("slow");
     $(".landes-main").hide("slow");
 });
 
 $('#landes-button').click(function(){
-    $(".landes-main").slideToggle("slow");
+    $(".landes-main").fadeToggle("slow");
     $(".lumiere-main").hide("slow");
     $(".britanny-main").hide("slow");
     $(".argent-main").hide("slow");

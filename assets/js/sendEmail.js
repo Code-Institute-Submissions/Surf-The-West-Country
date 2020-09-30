@@ -36,7 +36,9 @@ function addSpotMail(surfForm){
     .then(
         function(responseTwo){
             console.log("SUCCESS", responseTwo);
-            alert("Thank you. Email sent successfully!");
+            var hidden = document.getElementById("hide")
+            hidden.style.display = "block"
+            
         },
         function(errorTwo){
             console.log("FAILED", errorTwo);

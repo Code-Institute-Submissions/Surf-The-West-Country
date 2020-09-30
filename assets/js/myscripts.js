@@ -173,7 +173,7 @@ $(".legend").mouseleave(function(){
 });
 
 $(".main-button").click(function(){
-    document.querySelector(".card").scrollIntoView({
+    document.querySelector("#hero-map").scrollIntoView({
         behavior: "smooth"
     });
 })

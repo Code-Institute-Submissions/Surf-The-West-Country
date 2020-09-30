@@ -163,6 +163,10 @@ footer{
     top: 0;
 }
 
+.modalSub::-webkit-scrollbar{
+    display: none;
+}
+
 .display{
     display: none;
 }
@@ -310,16 +314,25 @@ footer{
     border: 3px solid rgb(30,30,30);
     padding: 8px;
     font-size: 16px;
-    width: 50%;
+    width: 40%;
     text-align: center;
     position: relative;
-    left: 25%;
+    left: 30%;
+    margin-bottom: 150px; /*--- To allow div with z-index 1 to fully scroll down when screen is resized--*/
+}
+
+.addPopUp::-webkit-scrollbar{
+    display: none;
 }
 
 .addPopUpForm{
     display: inline-block;
     vertical-align: top;
     letter-spacing: 2px;
+}
+
+.addPopUpForm::-webkit-scrollbar{
+    display: none;
 }
 
 .addPopUp>p{
@@ -483,6 +496,7 @@ textarea{
 
     .addPopUp, .modalContent{
         margin: 8px;
+        margin-bottom: 150px;
         position: unset;
         width: auto;
     }

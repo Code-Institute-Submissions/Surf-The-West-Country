@@ -8,7 +8,8 @@ function sendMail(contactForm){
     .then(
         function(response){
             console.log("SUCCESS", response);
-            alert("Thank you. Email sent successfully!");
+            var hiddenTwo = document.getElementById("hide-two")
+            hiddenTwo.style.display = "block"
         },
         function(error){
             console.log("FAILED", error);

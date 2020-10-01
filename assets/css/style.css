@@ -130,6 +130,7 @@ footer{
     letter-spacing: 2px;
     font-weight: lighter;
     font-size: 18px;
+    margin: 10px 0px;
 }
 
 .hide-description>ul{
@@ -138,6 +139,11 @@ footer{
 
 .hide-description{
    display: none;
+   line-height: 1.5em;
+}
+
+.hide-description>p{
+    margin-top: 8px;
 }
 
 .col{

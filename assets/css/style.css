@@ -3,7 +3,8 @@ html{
 }
 
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
     background:#263238; 
     margin: 0px;
 }
@@ -11,7 +12,7 @@ body{
 header{
     background: white;
     padding: 8px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .col-logo{
@@ -34,7 +35,7 @@ main{
     letter-spacing: 2px;
     font-size: 16px;
     text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background: transparent;
     border: 2px solid white;
     border-radius: 12px;
@@ -199,7 +200,7 @@ footer{
     font-size: 12px;
     letter-spacing: 4px;
     text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background: transparent;
     border: 1px solid white;
     border-radius: 12px;
@@ -219,7 +220,7 @@ footer{
     border: 2px solid white;
     border-radius: 2px;
     margin: 6px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .close-button{
@@ -246,7 +247,7 @@ footer{
     font-size: 12px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background: #1e1e1e;
     border: 2px solid #1e1e1e;
     border-radius: 10px;
@@ -291,7 +292,7 @@ footer{
 
 #addSurfSpotButton{
     float: right;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0px;
 }
 
@@ -344,7 +345,7 @@ footer{
 
 .inputSize{
     width: 70%;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 input{
@@ -358,7 +359,7 @@ input{
     font-size: 14px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background: white;
     border: 2px solid white;
     border-radius: 10px;
@@ -539,6 +540,7 @@ textarea{
 
     .open-par{
         padding: 10px 6px;
+        font-weight: 600;
     }
 
     .card{
@@ -557,13 +559,4 @@ textarea{
 .hide-message{
     display: none;
     color: white;
-}
-
-.selectCountry > select{
-    font-family: 'Poppins', sans-serif;
-    width: 70%;
-}
-
-.selectCountry > option{
-    font-family: 'Poppins', sans-serif;
 }

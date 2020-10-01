@@ -558,3 +558,12 @@ textarea{
     display: none;
     color: white;
 }
+
+.selectCountry > select{
+    font-family: 'Poppins', sans-serif;
+    width: 70%;
+}
+
+.selectCountry > option{
+    font-family: 'Poppins', sans-serif;
+}

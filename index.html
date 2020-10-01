@@ -7,15 +7,21 @@
     <script src="https://kit.fontawesome.com/b39ca5d2ff.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap" rel="stylesheet">
+
+    <script type ="text/javascript" src="assets/List_Country_State-master/countries.js"></script>
+
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
     </script>
+
     <script type="text/javascript">
         (function(){
             emailjs.init("user_DNH0IhXpLEsBPwX7FOPXP");
         })();
     </script>
+
     <script type="text/javascript" src="assets/js/jquery-3.5.1.js"></script>
+
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
@@ -49,6 +55,14 @@
                     
                     <label for="spotLocation" class="modal-form-label">Spot Location</label>
                     <input id="spotLocation" name="spotLocation" type="text" required>
+
+                    <div class="selectCountry">
+                        <select name="country" id="country"></select>
+                    </div>
+
+                    <script language="javascript">
+	                    populateCountries("country", "state"); 
+                    </script>
                     
                     <label for="break" class="modal-form-label">Break Type</label>
                     <input type="text" name="break" id="break" required>
@@ -829,6 +843,7 @@
 
 
 <!--------------------SCRIPTS-------------------------->
+
 
     <!--JS FILES-->
     <script type="text/javascript" src="assets/js/myscripts.js"></script>

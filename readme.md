@@ -17,7 +17,7 @@ Target audiences for this project include:
 
 ## Typography ## 
 
-I choose 'Roboto' as the single font for this project as it allows texts and headings to be displayed in a clean and easy to read way. The main goal is to get information across in a minimalist display from which the user will be able to quickly read and identify key pieces of information. 
+I choose 'Roboto' as the only font for this project because it allows texts and headings to be displayed in a clean and easy-to-read way. The main goal is to get information across in a minimalist display from which the user will be able to quickly read and identify key pieces of information. 
 
 ## Colour Scheme ## 
 
@@ -32,7 +32,10 @@ The colour palette ranges from tones of dark grey to blue in order to resemble d
 
 I used both hand-drawing and wireframe.cc to sketch the layouts I had in mind. 
 The main idea was to have Google Maps as the page's 'hero image' to provide visual sense of where each spot is located. 
-The cards would be displayed in correlation to the map's north to south spots. 
+The cards to be displayed in correlation to the map's north to south spots. 
+
+https://wireframe.cc/6k04jO - desktop
+https://wireframe.cc/9SIj1b - mobile
 
 ## Features ##
 

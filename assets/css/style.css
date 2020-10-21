@@ -464,7 +464,7 @@ textarea{
     }
 }
 
-@media only screen and (max-width: 925px){
+@media only screen and (max-width: 1000px){
     .main-button{
         margin: 4px;
         padding: 10px;
@@ -490,7 +490,7 @@ textarea{
 
 }
 
-@media only screen and (max-width: 740px){
+@media only screen and (max-width: 780px){
 
     body{
         overflow-x: hidden;

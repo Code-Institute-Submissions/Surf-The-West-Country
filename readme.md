@@ -1,7 +1,7 @@
 # Surf The West Country - Milestone Project 2#
 
 ![Image of Desktop View](https://github.com/inesnago/Surf-The-West-Country/blob/master/2%20(4).png)
-![Image of Mobile Screen View](https://octodex.github.com/images/yaktocat.png)
+![Image of Mobile Screen View](https://github.com/inesnago/Surf-The-West-Country/blob/master/IMG-7157.PNG)
 ## Overview ##
 
 This project aims to provide information on surf spots for all-level surfers and non-surfers. 

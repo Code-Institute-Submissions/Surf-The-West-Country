@@ -44,12 +44,12 @@ $('#landes-button').click(function(){
 $(".col-subs").mouseenter(function (){
     $(this).addClass("shade-black");
     $(".sm-main-button").addClass("shade");
-})
+});
 
 $(".col-subs").mouseleave(function (){
     $(this).removeClass("shade-black");
     $(".sm-main-button").removeClass("shade");
-})
+});
 
 $('.modal-button').mouseenter(function(){
     $(this).addClass('shade-dark-blue');
@@ -82,18 +82,18 @@ $("#addButton, #formButton").mouseenter(function(){
 
 $("#addButton, #formButton").mouseleave(function(){
     $(this).removeClass("shade-dark-blue");
-})
+});
 
 
 /*-----------------FOOTER LINKS ------*/
     
 $(".footer-link, .social-links").mouseenter(function(){
     $(this).addClass('hover-dark');
-})
+});
 
 $(".footer-link, .social-links").mouseleave(function(){
     $(this).removeClass('hover-dark');
-})
+});
 
 
 /*-------------- GOOGLE MAP MULTIPLE MARKERS ----------------*/
@@ -153,15 +153,15 @@ $("#spotName, #spotLocation, #break").addClass("inputSize");
 
 $(".toggleMainCard").click(function(){
     $(this).next("div").slideToggle("slow");
-})
+});
 
 $(".toggleMainCard").mouseenter(function(){
     $(this).addClass("bold")
-})
+});
 
 $(".toggleMainCard").mouseleave(function(){
     $(this).removeClass("bold")
-})
+});
 
 /*------------ ICON LEGEND ----------*/
 

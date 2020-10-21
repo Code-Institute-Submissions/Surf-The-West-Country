@@ -98,6 +98,9 @@ $(".footer-link, .social-links").mouseleave(function(){
 
 /*-------------- GOOGLE MAP MULTIPLE MARKERS ----------------*/
 
+// CREDIT TO https://gist.github.com/simonbingham - https://gist.github.com/simonbingham/2652757 // I have written the code below based on Google Maps Javascript code intructions. 
+//On top of that, to add more than one location on the map I have based the code below on Simon Bingham's code source.
+
 function initMap(){
 
     var locations = [
@@ -142,8 +145,6 @@ function initMap(){
         })(marker, i));
     };
 };
-
-/*----------  https://gist.github.com/simonbingham/2652757 -------------------------------------*/
 
 
 $("#spotName, #spotLocation, #break").addClass("inputSize");

@@ -17,11 +17,11 @@ Target audiences for this project include:
 
 ## Typography ## 
 
-I choose 'Roboto' as the only font for this project because it allows texts and headings to be displayed in a clean and easy-to-read way. The main goal is to get information across in a minimalist display from which the user will be able to quickly read and identify key pieces of information. 
+I choose 'Roboto' as the only font for this project because it allows texts and headings to be displayed in a clean and easy-to-read way. The main goal is to get information across in a minimalistic display from which the user will be able to quickly read and identify key pieces of information. 
 
 ## Colour Scheme ## 
 
-The colour palette ranges from tones of dark grey to blue in order to resemble different shades of the ocea in a neutal approach. 
+The colour palette ranges from tones of dark grey to blue to resemble different shades of the ocean in a neutal approach. 
 
 - #263238 
 - white
@@ -31,8 +31,7 @@ The colour palette ranges from tones of dark grey to blue in order to resemble d
 ## Wireframes ##
 
 I used both hand-drawing and wireframe.cc to sketch the layouts I had in mind. 
-The main idea was to have Google Maps as the page's 'hero image' to provide visual sense of where each spot is located. 
-The cards to be displayed in correlation to the map's north to south spots. 
+The main idea was to have Google Maps as the page's 'hero image' to provide visual sense of where each spot is located and, the cards to be displayed in correlation to the map's north to south spots. 
 
 https://wireframe.cc/6k04jO - desktop
 https://wireframe.cc/9SIj1b - mobile
@@ -61,6 +60,10 @@ https://wireframe.cc/9SIj1b - mobile
 10. Google Fonts
 11. Google Maps API: Map of the West Coast of France
 12. EmailJS: used for client-side email communication 
+
+## Features left out ##
+
+Footer social links - IG, Facebook and Twitter are disabled as well as footer 'About' and 'Terms & Conditions' due to nature of this page being a template. 
 
 ## Testing ##
 
@@ -96,7 +99,7 @@ Testing for contact form:
 ## How to Use? ##
 
 - Once you have opened the main page, choose a location to explore more on the West Coast of France. 
-- The coast runs from north to south and are divided into four main regions. Surfspots are consequently subdivided into each region. 
+- The coast runs from north to south and are divided into four main regions. Surfspots are consequently subdivided into regions. 
 - Use the map to navigate your way from north to south of France's West Coast. Cards appear in accordance to their location; number 1 (northest) to number 12 (southest).
 - Each information card displays icons with extra information on water temperature, beach type, parking, off-shore wind and beach access. 
 - The user can suggest other surf spots via the 'Add a Surfspot' button on the top right hand side of the page. 
